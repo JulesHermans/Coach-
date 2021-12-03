@@ -1,0 +1,9 @@
+version: "2"
+services:
+  app:
+    container_name: CoachThecoach-masterthesis
+    build:
+      context: ../
+      dockerfile: deployments/app/Dockerfile
+    ports:
+      - "3980:3980"
